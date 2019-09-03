@@ -1444,8 +1444,8 @@ Partial Class P_Clientes
         Me.StcSugerenciaUbicacion.ControlBox.MenuBox.Name = ""
         Me.StcSugerenciaUbicacion.ControlBox.Name = ""
         Me.StcSugerenciaUbicacion.ControlBox.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.StcSugerenciaUbicacion.ControlBox.MenuBox, Me.StcSugerenciaUbicacion.ControlBox.CloseBox})
-        Me.StcSugerenciaUbicacion.Controls.Add(Me.SuperTabControlPanel3)
         Me.StcSugerenciaUbicacion.Controls.Add(Me.SuperTabControlPanel4)
+        Me.StcSugerenciaUbicacion.Controls.Add(Me.SuperTabControlPanel3)
         Me.StcSugerenciaUbicacion.Dock = System.Windows.Forms.DockStyle.Fill
         Me.StcSugerenciaUbicacion.Location = New System.Drawing.Point(1103, 0)
         Me.StcSugerenciaUbicacion.Margin = New System.Windows.Forms.Padding(4)
@@ -1493,10 +1493,10 @@ Partial Class P_Clientes
         Me.SuperTabControlPanel4.Controls.Add(Me.GroupPanel4)
         Me.SuperTabControlPanel4.Controls.Add(Me.Gp_Datos)
         Me.SuperTabControlPanel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SuperTabControlPanel4.Location = New System.Drawing.Point(0, 31)
+        Me.SuperTabControlPanel4.Location = New System.Drawing.Point(0, 28)
         Me.SuperTabControlPanel4.Margin = New System.Windows.Forms.Padding(4)
         Me.SuperTabControlPanel4.Name = "SuperTabControlPanel4"
-        Me.SuperTabControlPanel4.Size = New System.Drawing.Size(343, 350)
+        Me.SuperTabControlPanel4.Size = New System.Drawing.Size(268, 352)
         Me.SuperTabControlPanel4.TabIndex = 0
         Me.SuperTabControlPanel4.TabItem = Me.StiUbicacion
         '
@@ -1510,7 +1510,7 @@ Partial Class P_Clientes
         Me.GroupPanel4.Location = New System.Drawing.Point(224, 0)
         Me.GroupPanel4.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupPanel4.Name = "GroupPanel4"
-        Me.GroupPanel4.Size = New System.Drawing.Size(119, 350)
+        Me.GroupPanel4.Size = New System.Drawing.Size(44, 352)
         '
         '
         '
@@ -1567,7 +1567,7 @@ Partial Class P_Clientes
         Me.Gmc_Cliente.ScaleMode = GMap.NET.WindowsForms.ScaleModes.[Integer]
         Me.Gmc_Cliente.SelectedAreaFillColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(225, Byte), Integer))
         Me.Gmc_Cliente.ShowTileGridLines = False
-        Me.Gmc_Cliente.Size = New System.Drawing.Size(113, 327)
+        Me.Gmc_Cliente.Size = New System.Drawing.Size(38, 329)
         Me.Gmc_Cliente.TabIndex = 2
         Me.Gmc_Cliente.Zoom = 0R
         '
@@ -1586,7 +1586,7 @@ Partial Class P_Clientes
         Me.Gp_Datos.Location = New System.Drawing.Point(0, 0)
         Me.Gp_Datos.Margin = New System.Windows.Forms.Padding(4)
         Me.Gp_Datos.Name = "Gp_Datos"
-        Me.Gp_Datos.Size = New System.Drawing.Size(224, 350)
+        Me.Gp_Datos.Size = New System.Drawing.Size(224, 352)
         '
         '
         '

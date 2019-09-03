@@ -112,9 +112,9 @@ Public Class P_Clientes
 
     Private Sub P_Inicio()
         'L_abrirConexion()
-        If gb_mostrarMapa = False Then
-            StiUbicacion.Visible = False
-        End If
+        'If gb_mostrarMapa = False Then
+        '    StiUbicacion.Visible = False
+        'End If
 
         SuperTabControl1.SelectedTab = SuperTabItem1
 

@@ -143,9 +143,6 @@ Partial Class P_PedidosAsignacion
         Me.ANULARPEDIDOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SuperTabItem5 = New DevComponents.DotNetBar.SuperTabItem()
         Me.SuperTabControlPanel5 = New DevComponents.DotNetBar.SuperTabControlPanel()
-        Me.PanelEx27 = New DevComponents.DotNetBar.PanelEx()
-        Me.GroupPanel8 = New DevComponents.DotNetBar.Controls.GroupPanel()
-        Me.JGr_Zonas4 = New Janus.Windows.GridEX.GridEX()
         Me.PanelEx30 = New DevComponents.DotNetBar.PanelEx()
         Me.PanelEx31 = New DevComponents.DotNetBar.PanelEx()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
@@ -167,6 +164,9 @@ Partial Class P_PedidosAsignacion
         Me.LabelX14 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX15 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX16 = New DevComponents.DotNetBar.LabelX()
+        Me.PanelEx27 = New DevComponents.DotNetBar.PanelEx()
+        Me.GroupPanel8 = New DevComponents.DotNetBar.Controls.GroupPanel()
+        Me.JGr_Zonas4 = New Janus.Windows.GridEX.GridEX()
         CType(Me.SuperTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuperTabControl1.SuspendLayout()
         Me.SuperTabControlPanel2.SuspendLayout()
@@ -230,9 +230,6 @@ Partial Class P_PedidosAsignacion
         Me.ConMenu_Opciones3.SuspendLayout()
         Me.ConMenu_Opciones1.SuspendLayout()
         Me.SuperTabControlPanel5.SuspendLayout()
-        Me.PanelEx27.SuspendLayout()
-        Me.GroupPanel8.SuspendLayout()
-        CType(Me.JGr_Zonas4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEx30.SuspendLayout()
         Me.PanelEx31.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -242,6 +239,9 @@ Partial Class P_PedidosAsignacion
         CType(Me.JGr_Registros4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEx33.SuspendLayout()
         Me.GroupPanel9.SuspendLayout()
+        Me.PanelEx27.SuspendLayout()
+        Me.GroupPanel8.SuspendLayout()
+        CType(Me.JGr_Zonas4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SuperTabControl1
@@ -269,10 +269,10 @@ Partial Class P_PedidosAsignacion
         Me.SuperTabControl1.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue
         Me.SuperTabControl1.Text = "PEDIDOS ENTREGADOS"
         Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel1, 0)
-        Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel2, 0)
         Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel4, 0)
         Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel3, 0)
         Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel5, 0)
+        Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel2, 0)
         '
         'SuperTabControlPanel2
         '
@@ -2570,84 +2570,6 @@ Partial Class P_PedidosAsignacion
         Me.SuperTabControlPanel5.TabIndex = 0
         Me.SuperTabControlPanel5.TabItem = Me.SuperTabItem5
         '
-        'PanelEx27
-        '
-        Me.PanelEx27.CanvasColor = System.Drawing.SystemColors.Control
-        Me.PanelEx27.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.PanelEx27.Controls.Add(Me.GroupPanel8)
-        Me.PanelEx27.DisabledBackColor = System.Drawing.Color.Empty
-        Me.PanelEx27.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEx27.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEx27.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelEx27.Name = "PanelEx27"
-        Me.PanelEx27.Size = New System.Drawing.Size(503, 886)
-        Me.PanelEx27.Style.Alignment = System.Drawing.StringAlignment.Center
-        Me.PanelEx27.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
-        Me.PanelEx27.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
-        Me.PanelEx27.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
-        Me.PanelEx27.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
-        Me.PanelEx27.Style.GradientAngle = 90
-        Me.PanelEx27.TabIndex = 16
-        '
-        'GroupPanel8
-        '
-        Me.GroupPanel8.BackColor = System.Drawing.Color.Transparent
-        Me.GroupPanel8.CanvasColor = System.Drawing.SystemColors.Control
-        Me.GroupPanel8.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
-        Me.GroupPanel8.Controls.Add(Me.JGr_Zonas4)
-        Me.GroupPanel8.DisabledBackColor = System.Drawing.Color.Empty
-        Me.GroupPanel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupPanel8.Location = New System.Drawing.Point(0, 0)
-        Me.GroupPanel8.Margin = New System.Windows.Forms.Padding(4)
-        Me.GroupPanel8.Name = "GroupPanel8"
-        Me.GroupPanel8.Size = New System.Drawing.Size(503, 886)
-        '
-        '
-        '
-        Me.GroupPanel8.Style.BackColor = System.Drawing.Color.DodgerBlue
-        Me.GroupPanel8.Style.BackColor2 = System.Drawing.Color.DodgerBlue
-        Me.GroupPanel8.Style.BackColorGradientAngle = 90
-        Me.GroupPanel8.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.GroupPanel8.Style.BorderBottomWidth = 1
-        Me.GroupPanel8.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
-        Me.GroupPanel8.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.GroupPanel8.Style.BorderLeftWidth = 1
-        Me.GroupPanel8.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.GroupPanel8.Style.BorderRightWidth = 1
-        Me.GroupPanel8.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.GroupPanel8.Style.BorderTopWidth = 1
-        Me.GroupPanel8.Style.CornerDiameter = 4
-        Me.GroupPanel8.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.GroupPanel8.Style.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupPanel8.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center
-        Me.GroupPanel8.Style.TextColor = System.Drawing.Color.White
-        Me.GroupPanel8.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near
-        '
-        '
-        '
-        Me.GroupPanel8.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.GroupPanel8.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.GroupPanel8.TabIndex = 110
-        Me.GroupPanel8.Text = "ELEGIR ZONA"
-        '
-        'JGr_Zonas4
-        '
-        Me.JGr_Zonas4.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.[False]
-        Me.JGr_Zonas4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.JGr_Zonas4.HeaderFormatStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.JGr_Zonas4.HideSelection = Janus.Windows.GridEX.HideSelection.Highlight
-        Me.JGr_Zonas4.Location = New System.Drawing.Point(0, 0)
-        Me.JGr_Zonas4.Margin = New System.Windows.Forms.Padding(4)
-        Me.JGr_Zonas4.Name = "JGr_Zonas4"
-        Me.JGr_Zonas4.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
-        Me.JGr_Zonas4.Office2007CustomColor = System.Drawing.Color.DodgerBlue
-        Me.JGr_Zonas4.Size = New System.Drawing.Size(497, 861)
-        Me.JGr_Zonas4.TabIndex = 0
-        Me.JGr_Zonas4.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
-        '
         'PanelEx30
         '
         Me.PanelEx30.CanvasColor = System.Drawing.SystemColors.Control
@@ -3033,6 +2955,84 @@ Partial Class P_PedidosAsignacion
         Me.LabelX16.Text = "CIUDAD:"
         Me.LabelX16.Visible = False
         '
+        'PanelEx27
+        '
+        Me.PanelEx27.CanvasColor = System.Drawing.SystemColors.Control
+        Me.PanelEx27.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.PanelEx27.Controls.Add(Me.GroupPanel8)
+        Me.PanelEx27.DisabledBackColor = System.Drawing.Color.Empty
+        Me.PanelEx27.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEx27.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEx27.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelEx27.Name = "PanelEx27"
+        Me.PanelEx27.Size = New System.Drawing.Size(503, 886)
+        Me.PanelEx27.Style.Alignment = System.Drawing.StringAlignment.Center
+        Me.PanelEx27.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
+        Me.PanelEx27.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
+        Me.PanelEx27.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
+        Me.PanelEx27.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
+        Me.PanelEx27.Style.GradientAngle = 90
+        Me.PanelEx27.TabIndex = 16
+        '
+        'GroupPanel8
+        '
+        Me.GroupPanel8.BackColor = System.Drawing.Color.Transparent
+        Me.GroupPanel8.CanvasColor = System.Drawing.SystemColors.Control
+        Me.GroupPanel8.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
+        Me.GroupPanel8.Controls.Add(Me.JGr_Zonas4)
+        Me.GroupPanel8.DisabledBackColor = System.Drawing.Color.Empty
+        Me.GroupPanel8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupPanel8.Location = New System.Drawing.Point(0, 0)
+        Me.GroupPanel8.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupPanel8.Name = "GroupPanel8"
+        Me.GroupPanel8.Size = New System.Drawing.Size(503, 886)
+        '
+        '
+        '
+        Me.GroupPanel8.Style.BackColor = System.Drawing.Color.DodgerBlue
+        Me.GroupPanel8.Style.BackColor2 = System.Drawing.Color.DodgerBlue
+        Me.GroupPanel8.Style.BackColorGradientAngle = 90
+        Me.GroupPanel8.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel8.Style.BorderBottomWidth = 1
+        Me.GroupPanel8.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
+        Me.GroupPanel8.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel8.Style.BorderLeftWidth = 1
+        Me.GroupPanel8.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel8.Style.BorderRightWidth = 1
+        Me.GroupPanel8.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.GroupPanel8.Style.BorderTopWidth = 1
+        Me.GroupPanel8.Style.CornerDiameter = 4
+        Me.GroupPanel8.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.GroupPanel8.Style.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupPanel8.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center
+        Me.GroupPanel8.Style.TextColor = System.Drawing.Color.White
+        Me.GroupPanel8.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near
+        '
+        '
+        '
+        Me.GroupPanel8.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.GroupPanel8.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.GroupPanel8.TabIndex = 110
+        Me.GroupPanel8.Text = "ELEGIR ZONA"
+        '
+        'JGr_Zonas4
+        '
+        Me.JGr_Zonas4.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.[False]
+        Me.JGr_Zonas4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.JGr_Zonas4.HeaderFormatStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.JGr_Zonas4.HideSelection = Janus.Windows.GridEX.HideSelection.Highlight
+        Me.JGr_Zonas4.Location = New System.Drawing.Point(0, 0)
+        Me.JGr_Zonas4.Margin = New System.Windows.Forms.Padding(4)
+        Me.JGr_Zonas4.Name = "JGr_Zonas4"
+        Me.JGr_Zonas4.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
+        Me.JGr_Zonas4.Office2007CustomColor = System.Drawing.Color.DodgerBlue
+        Me.JGr_Zonas4.Size = New System.Drawing.Size(497, 861)
+        Me.JGr_Zonas4.TabIndex = 0
+        Me.JGr_Zonas4.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
+        '
         'P_PedidosAsignacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -3105,9 +3105,6 @@ Partial Class P_PedidosAsignacion
         Me.ConMenu_Opciones3.ResumeLayout(False)
         Me.ConMenu_Opciones1.ResumeLayout(False)
         Me.SuperTabControlPanel5.ResumeLayout(False)
-        Me.PanelEx27.ResumeLayout(False)
-        Me.GroupPanel8.ResumeLayout(False)
-        CType(Me.JGr_Zonas4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelEx30.ResumeLayout(False)
         Me.PanelEx31.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)
@@ -3117,6 +3114,9 @@ Partial Class P_PedidosAsignacion
         CType(Me.JGr_Registros4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelEx33.ResumeLayout(False)
         Me.GroupPanel9.ResumeLayout(False)
+        Me.PanelEx27.ResumeLayout(False)
+        Me.GroupPanel8.ResumeLayout(False)
+        CType(Me.JGr_Zonas4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

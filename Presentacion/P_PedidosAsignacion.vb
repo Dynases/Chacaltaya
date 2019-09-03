@@ -20,15 +20,15 @@ Public Class P_PedidosAsignacion
 #Region "Metodos Privados"
     Private Sub _PIniciarTodo()
 
-        If gb_mostrarMapa = False Then
-            GM_Mapa1.Visible = False
-            GM_Mapa2.Visible = False
-            GM_Mapa3.Visible = False
+        'If gb_mostrarMapa = False Then
+        '    GM_Mapa1.Visible = False
+        '    GM_Mapa2.Visible = False
+        '    GM_Mapa3.Visible = False
 
-            PanelEx24.Visible = False
-            PanelEx25.Visible = False
-            PanelEx26.Visible = False
-        End If
+        '    PanelEx24.Visible = False
+        '    PanelEx25.Visible = False
+        '    PanelEx26.Visible = False
+        'End If
 
 
         Me.Text = "A S I G N A C I O N    D E    P E D I D O S"
