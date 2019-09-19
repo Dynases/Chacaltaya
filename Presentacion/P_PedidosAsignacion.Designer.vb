@@ -268,11 +268,11 @@ Partial Class P_PedidosAsignacion
         Me.SuperTabControl1.Tabs.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SuperTabItem3, Me.SuperTabItem4, Me.SuperTabItem5})
         Me.SuperTabControl1.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue
         Me.SuperTabControl1.Text = "PEDIDOS ENTREGADOS"
-        Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel1, 0)
         Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel4, 0)
+        Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel1, 0)
         Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel3, 0)
-        Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel5, 0)
         Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel2, 0)
+        Me.SuperTabControl1.Controls.SetChildIndex(Me.SuperTabControlPanel5, 0)
         '
         'SuperTabControlPanel2
         '
@@ -2557,7 +2557,7 @@ Partial Class P_PedidosAsignacion
         Me.SuperTabItem5.AttachedControl = Me.SuperTabControlPanel5
         Me.SuperTabItem5.GlobalItem = False
         Me.SuperTabItem5.Name = "SuperTabItem5"
-        Me.SuperTabItem5.Text = "PEDIDOS MORA"
+        Me.SuperTabItem5.Text = "VENCIDOS"
         '
         'SuperTabControlPanel5
         '

@@ -125,11 +125,11 @@ Public Class P_Clientes
         P_HabilitarComponentes(False)
 
         'Lbl_Sms.Text = ""
-        If (gb_mostrarMapa) Then
-            P_MapLoad()
-        End If
+        '' If (gb_mostrarMapa) Then
+        P_MapLoad()
+            '' End If
 
-        gt_Productos = L_GetProductos("caserie = " + CStr(1)).Tables(0)
+            gt_Productos = L_GetProductos("caserie = " + CStr(1)).Tables(0)
         DtProductosCompuestos = New DataTable
         DtProductosCompuestos = L_fnClienteEquipoProductosCompuestos()
 
@@ -711,9 +711,9 @@ Public Class P_Clientes
             End If
             'Aqui se coloca los datos de la grilla de los Equipos
             P_PonerDatosEquipoPorCliente(Txt_Codigo.Text)
-            P_PonerResumenEquipo()
-        Else
-            If (_NavegadorReg < 0) Then
+                P_PonerResumenEquipo()
+            Else
+                If (_NavegadorReg < 0) Then
                 _NavegadorReg = 0
             Else
                 _NavegadorReg = _MaxReg

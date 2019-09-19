@@ -92,9 +92,6 @@ Partial Class P_Clientes
         Me.Rl1Accion = New DevComponents.DotNetBar.Controls.ReflectionLabel()
         Me.FlyoutUsuario = New DevComponents.DotNetBar.Controls.Flyout(Me.components)
         Me.StcSugerenciaUbicacion = New DevComponents.DotNetBar.SuperTabControl()
-        Me.SuperTabControlPanel3 = New DevComponents.DotNetBar.SuperTabControlPanel()
-        Me.DgjSugerencias = New Janus.Windows.GridEX.GridEX()
-        Me.StiFiltroCliente = New DevComponents.DotNetBar.SuperTabItem()
         Me.SuperTabControlPanel4 = New DevComponents.DotNetBar.SuperTabControlPanel()
         Me.GroupPanel4 = New DevComponents.DotNetBar.Controls.GroupPanel()
         Me.Gmc_Cliente = New GMap.NET.WindowsForms.GMapControl()
@@ -112,6 +109,9 @@ Partial Class P_Clientes
         Me.Txt_Latitud = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LabelX11 = New DevComponents.DotNetBar.LabelX()
         Me.StiUbicacion = New DevComponents.DotNetBar.SuperTabItem()
+        Me.SuperTabControlPanel3 = New DevComponents.DotNetBar.SuperTabControlPanel()
+        Me.DgjSugerencias = New Janus.Windows.GridEX.GridEX()
+        Me.StiFiltroCliente = New DevComponents.DotNetBar.SuperTabItem()
         Me.BtActualizar = New DevComponents.DotNetBar.ButtonX()
         Me.CpActCliente = New DevComponents.DotNetBar.Controls.CircularProgress()
         Me.TiCliente = New System.Windows.Forms.Timer(Me.components)
@@ -147,12 +147,12 @@ Partial Class P_Clientes
         CType(Me.Dgj1Busqueda, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StcSugerenciaUbicacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StcSugerenciaUbicacion.SuspendLayout()
-        Me.SuperTabControlPanel3.SuspendLayout()
-        CType(Me.DgjSugerencias, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuperTabControlPanel4.SuspendLayout()
         Me.GroupPanel4.SuspendLayout()
         Me.Gp_Datos.SuspendLayout()
         Me.PanelUsuario.SuspendLayout()
+        Me.SuperTabControlPanel3.SuspendLayout()
+        CType(Me.DgjSugerencias, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SuperTabControl1
@@ -1459,35 +1459,6 @@ Partial Class P_Clientes
         Me.StcSugerenciaUbicacion.Tabs.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.StiFiltroCliente, Me.StiUbicacion})
         Me.StcSugerenciaUbicacion.Text = "SuperTabControl2"
         '
-        'SuperTabControlPanel3
-        '
-        Me.SuperTabControlPanel3.Controls.Add(Me.DgjSugerencias)
-        Me.SuperTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SuperTabControlPanel3.Location = New System.Drawing.Point(0, 28)
-        Me.SuperTabControlPanel3.Margin = New System.Windows.Forms.Padding(4)
-        Me.SuperTabControlPanel3.Name = "SuperTabControlPanel3"
-        Me.SuperTabControlPanel3.Padding = New System.Windows.Forms.Padding(7, 6, 7, 6)
-        Me.SuperTabControlPanel3.Size = New System.Drawing.Size(268, 352)
-        Me.SuperTabControlPanel3.TabIndex = 1
-        Me.SuperTabControlPanel3.TabItem = Me.StiFiltroCliente
-        '
-        'DgjSugerencias
-        '
-        Me.DgjSugerencias.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DgjSugerencias.Location = New System.Drawing.Point(7, 6)
-        Me.DgjSugerencias.Margin = New System.Windows.Forms.Padding(4)
-        Me.DgjSugerencias.Name = "DgjSugerencias"
-        Me.DgjSugerencias.RecordNavigator = True
-        Me.DgjSugerencias.Size = New System.Drawing.Size(254, 340)
-        Me.DgjSugerencias.TabIndex = 0
-        '
-        'StiFiltroCliente
-        '
-        Me.StiFiltroCliente.AttachedControl = Me.SuperTabControlPanel3
-        Me.StiFiltroCliente.GlobalItem = False
-        Me.StiFiltroCliente.Name = "StiFiltroCliente"
-        Me.StiFiltroCliente.Text = "Sugerencias"
-        '
         'SuperTabControlPanel4
         '
         Me.SuperTabControlPanel4.Controls.Add(Me.GroupPanel4)
@@ -1777,6 +1748,35 @@ Partial Class P_Clientes
         Me.StiUbicacion.Name = "StiUbicacion"
         Me.StiUbicacion.Text = "Ubicación"
         '
+        'SuperTabControlPanel3
+        '
+        Me.SuperTabControlPanel3.Controls.Add(Me.DgjSugerencias)
+        Me.SuperTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SuperTabControlPanel3.Location = New System.Drawing.Point(0, 28)
+        Me.SuperTabControlPanel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.SuperTabControlPanel3.Name = "SuperTabControlPanel3"
+        Me.SuperTabControlPanel3.Padding = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.SuperTabControlPanel3.Size = New System.Drawing.Size(268, 352)
+        Me.SuperTabControlPanel3.TabIndex = 1
+        Me.SuperTabControlPanel3.TabItem = Me.StiFiltroCliente
+        '
+        'DgjSugerencias
+        '
+        Me.DgjSugerencias.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DgjSugerencias.Location = New System.Drawing.Point(7, 6)
+        Me.DgjSugerencias.Margin = New System.Windows.Forms.Padding(4)
+        Me.DgjSugerencias.Name = "DgjSugerencias"
+        Me.DgjSugerencias.RecordNavigator = True
+        Me.DgjSugerencias.Size = New System.Drawing.Size(254, 340)
+        Me.DgjSugerencias.TabIndex = 0
+        '
+        'StiFiltroCliente
+        '
+        Me.StiFiltroCliente.AttachedControl = Me.SuperTabControlPanel3
+        Me.StiFiltroCliente.GlobalItem = False
+        Me.StiFiltroCliente.Name = "StiFiltroCliente"
+        Me.StiFiltroCliente.Text = "Sugerencias"
+        '
         'BtActualizar
         '
         Me.BtActualizar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
@@ -1874,13 +1874,13 @@ Partial Class P_Clientes
         CType(Me.Dgj1Busqueda, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StcSugerenciaUbicacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.StcSugerenciaUbicacion.ResumeLayout(False)
-        Me.SuperTabControlPanel3.ResumeLayout(False)
-        CType(Me.DgjSugerencias, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SuperTabControlPanel4.ResumeLayout(False)
         Me.GroupPanel4.ResumeLayout(False)
         Me.Gp_Datos.ResumeLayout(False)
         Me.PanelUsuario.ResumeLayout(False)
         Me.PanelUsuario.PerformLayout()
+        Me.SuperTabControlPanel3.ResumeLayout(False)
+        CType(Me.DgjSugerencias, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
